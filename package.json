@@ -1,0 +1,29 @@
+{
+  "name": "olympic-dining-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/server.js",
+    "client": "cross-env NODE_OPTIONS=--openssl-legacy-provider npm start --prefix client",
+    "install-client": "npm install --prefix client"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.6",
+    "@mui/material": "^5.0.6",
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.13.0",
+    "nodemon": "^2.0.15",
+    "react-router-dom": "^6.23.1",
+    "styled-components": "^6.1.11"
+  }
+}
